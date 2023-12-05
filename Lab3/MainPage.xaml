@@ -82,22 +82,7 @@
                     BackgroundColor="LightBlue"
                     WidthRequest="200"
                     HeightRequest="65"/>
-                    <Picker 
-                    x:Name="courseorientationPicker" 
-                    Title="Науковий керівник" 
-                    FontSize="12"
-                    Margin="0, 0, 10, 0" 
-                    BackgroundColor="LightBlue"
-                    WidthRequest="200"
-                    HeightRequest="65"/>
-                    <Picker 
-                    x:Name="managerinfoPicker" 
-                    Title="Науковий керівник" 
-                    FontSize="12"
-                    Margin="0, 0, 10, 0" 
-                    BackgroundColor="LightBlue"
-                    WidthRequest="200"
-                    HeightRequest="65"/>
+
                 </FlexLayout>
 
                 <FlexLayout  Direction="Row" HorizontalOptions="Center" JustifyContent="Start" AlignItems="Center" Padding="10, 20, 10, 20">

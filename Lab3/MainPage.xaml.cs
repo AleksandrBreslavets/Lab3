@@ -64,8 +64,8 @@ namespace Lab3
             starostaPicker.ItemsSource = null;
             timehandlingPicker.ItemsSource = null;
             classmonitorPicker.ItemsSource = null;
-            courseorientationPicker.ItemsSource = null;
-            managerinfoPicker.ItemsSource = null;
+           // courseorientationPicker.ItemsSource = null;
+           // managerinfoPicker.ItemsSource = null;
         }
 
         private void SortPickersValues()
@@ -166,16 +166,15 @@ namespace Lab3
                     try
                     {
                         _deserializedData = JsonProcessor.Deserialize(_filePath);
+                        UpdateFilters();
+                        FillPickers();
+                        filters.IsVisible = true;
                     }
                     catch (Exception ex)
                     {
                         _isError = true;
                         await DisplayAlert("Помилка", ex.Message, "ОК");
-                    }
-
-                    UpdateFilters();
-                    FillPickers();
-                    filters.IsVisible = true;
+                    } 
                 }
                 else
                 {
